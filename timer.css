@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #ECF0F1;
+    --accent-color: #3498DB;
+    --success-color: #2ECC71;
+    --danger-color: #E74C3C;
+    --warning-color: #F1C40F;
+}
+
+body {
+    background-color: #f5f6fa;
+    font-family: 'Roboto Mono', monospace;
+}
+
+main{
+    margin: 0px 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 60px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.time {
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+input {
+    font-family: 'Roboto Mono', monospace;
+    padding: 12px 15px;
+    width: 120px;
+    border-radius: 8px;
+    border: 2px solid #e1e1e1;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.button-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.start, .stop, .reset {
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.stop {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.reset {
+    background-color: var(--warning-color);
+    color: var(--primary-color);
+}
+
+.start:hover { background-color: #27AE60; }
+.stop:hover { background-color: #C0392B; }
+.reset:hover { background-color: #F39C12; }
+
+.start:active { transform: scale(0.95); }
+.stop:active { transform: scale(0.95); }
+.reset:active { transform: scale(0.95); }
